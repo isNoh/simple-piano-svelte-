@@ -1,6 +1,7 @@
 <script>
 	function forTest() {
 		console.log("Test!");
+		console.log("건반이 눌려졌습니다!");
 	}
 </script>
 
