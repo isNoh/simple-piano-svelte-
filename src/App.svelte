@@ -1,10 +1,15 @@
 <script>
 	let noteC = new Audio("C.mp3");
+	let noteDb = new Audio("Db.mp3");
 	let noteD = new Audio("D.mp3");
+	let noteEb = new Audio("Eb.mp3");
 	let noteE = new Audio("E.mp3");
 	let noteF = new Audio("F.mp3");
+	let noteGb = new Audio("Gb.mp3");
 	let noteG = new Audio("G.mp3");
+	let noteAb = new Audio("Ab.mp3");
 	let noteA = new Audio("A.mp3");
+	let noteBb = new Audio("Bb.mp3");
 	let noteB = new Audio("B.mp3");
 </script>
 
@@ -22,7 +27,7 @@
 			</div>
 			<div
 				on:click={() => {
-					console.log("Db");
+					noteDb.play();
 				}}
 				class="piano-key__black black__Db"
 			>
@@ -38,7 +43,7 @@
 			</div>
 			<div
 				on:click={() => {
-					console.log("Eb");
+					noteEb.play();
 				}}
 				class="piano-key__black black__Eb"
 			>
@@ -62,7 +67,7 @@
 			</div>
 			<div
 				on:click={() => {
-					console.log("Gb");
+					noteGb.play();
 				}}
 				class="piano-key__black black__Gb"
 			>
@@ -78,7 +83,7 @@
 			</div>
 			<div
 				on:click={() => {
-					console.log("Ab");
+					noteAb.play();
 				}}
 				class="piano-key__black black__Ab"
 			>
@@ -94,7 +99,7 @@
 			</div>
 			<div
 				on:click={() => {
-					console.log("Bb");
+					noteBb.play();
 				}}
 				class="piano-key__black black__Bb"
 			>
