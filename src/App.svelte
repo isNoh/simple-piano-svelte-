@@ -1,26 +1,113 @@
 <script>
-	function forTest() {
-		console.log("Test!");
-		console.log("건반이 눌려졌습니다!");
-	}
+	let noteC = new Audio("C.mp3");
+	let noteD = new Audio("D.mp3");
+	let noteE = new Audio("E.mp3");
+	let noteF = new Audio("F.mp3");
+	let noteG = new Audio("G.mp3");
+	let noteA = new Audio("A.mp3");
+	let noteB = new Audio("B.mp3");
 </script>
 
 <main>
 	<h1>Simple Piano!</h1>
 	<div class="piano-main">
 		<div class="piano-key">
-			<div on:click={forTest} class="piano-key__white">C</div>
-			<div on:click={forTest} class="piano-key__black black__Db">C#/Db</div>
-			<div on:click={forTest} class="piano-key__white">D</div>
-			<div on:click={forTest} class="piano-key__black black__Eb">D#/Eb</div>
-			<div on:click={forTest} class="piano-key__white">E</div>
-			<div on:click={forTest} class="piano-key__white">F</div>
-			<div on:click={forTest} class="piano-key__black black__Gb">F#/Gb</div>
-			<div on:click={forTest} class="piano-key__white">G</div>
-			<div on:click={forTest} class="piano-key__black black__Ab">G#/Ab</div>
-			<div on:click={forTest} class="piano-key__white">A</div>
-			<div on:click={forTest} class="piano-key__black black__Bb">A#/Bb</div>
-			<div on:click={forTest} class="piano-key__white">B</div>
+			<div
+				on:click={() => {
+					noteC.play();
+				}}
+				class="piano-key__white"
+			>
+				C
+			</div>
+			<div
+				on:click={() => {
+					console.log("Db");
+				}}
+				class="piano-key__black black__Db"
+			>
+				C#/Db
+			</div>
+			<div
+				on:click={() => {
+					noteD.play();
+				}}
+				class="piano-key__white"
+			>
+				D
+			</div>
+			<div
+				on:click={() => {
+					console.log("Eb");
+				}}
+				class="piano-key__black black__Eb"
+			>
+				D#/Eb
+			</div>
+			<div
+				on:click={() => {
+					noteE.play();
+				}}
+				class="piano-key__white"
+			>
+				E
+			</div>
+			<div
+				on:click={() => {
+					noteF.play();
+				}}
+				class="piano-key__white"
+			>
+				F
+			</div>
+			<div
+				on:click={() => {
+					console.log("Gb");
+				}}
+				class="piano-key__black black__Gb"
+			>
+				F#/Gb
+			</div>
+			<div
+				on:click={() => {
+					noteG.play();
+				}}
+				class="piano-key__white"
+			>
+				G
+			</div>
+			<div
+				on:click={() => {
+					console.log("Ab");
+				}}
+				class="piano-key__black black__Ab"
+			>
+				G#/Ab
+			</div>
+			<div
+				on:click={() => {
+					noteA.play();
+				}}
+				class="piano-key__white"
+			>
+				A
+			</div>
+			<div
+				on:click={() => {
+					console.log("Bb");
+				}}
+				class="piano-key__black black__Bb"
+			>
+				A#/Bb
+			</div>
+			<div
+				on:click={() => {
+					noteB.play();
+				}}
+				class="piano-key__white"
+			>
+				B
+			</div>
 		</div>
 	</div>
 </main>
